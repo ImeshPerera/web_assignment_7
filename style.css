@@ -1,0 +1,60 @@
+.bg-green {
+  background-color: #5eb562;
+}
+
+.bg-light-green {
+  background-color: rgba(94, 181, 98, 0.5);
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-card {
+  background: #e8f5e9;
+  border-radius: 10px;
+  height: 70vh;
+  margin-top: 8vh;
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+}
+
+.login-input {
+  border: 1px solid #5eb562;
+  padding: 10px;
+  border-radius: 6px;
+  width: 75%;
+  margin: auto;
+}
+
+.login-input:focus {
+  border: 1px solid #5eb562;
+}
+
+.quiz-card {
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+.result-card {
+  width: 300px;
+  background: #e8f5e9;
+  border-radius: 10px;
+}
+
+.option-btn {
+  border: 1px solid #5eb562;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background-color: #d1e7dd;
+}
+
+.option-selected {
+  background-color: #5eb562;
+  color: #fff;
+}
