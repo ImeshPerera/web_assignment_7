@@ -6,6 +6,10 @@
   background-color: rgba(94, 181, 98, 0.5);
 }
 
+.bg-dark-green {
+  background-color: rgba(94, 181, 98, 0.8);
+}
+
 body {
   font-family: "Segoe UI", sans-serif;
 }
@@ -31,6 +35,22 @@ body {
   border: 1px solid #5eb562;
 }
 
+.login-btn:hover {
+  background-color: #0a9411 !important;
+  color: #fff;
+}
+
+.bg-image {
+  background-image: url("assest/bg_image.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.inside-box {
+  background-color: rgba(255, 255, 255, 0.507);
+  height: 100vh;
+}
+
 .quiz-card {
   max-width: 600px;
   border-radius: 12px;
@@ -43,8 +63,9 @@ body {
 }
 
 .option-btn {
-  border: 1px solid #5eb562;
+  border: none;
   padding: 10px;
+  padding-left: 35px;
   margin-bottom: 10px;
   border-radius: 6px;
   cursor: pointer;
@@ -52,9 +73,16 @@ body {
 
 .option-btn:hover {
   background-color: #d1e7dd;
+  color: black;
 }
 
 .option-selected {
   background-color: #5eb562;
   color: #fff;
+}
+
+.radio-active[type="radio"] {
+  background-color: #ffffff;
+  border-color: #5eb562;
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%235eb562'/%3e%3c/svg%3e");
 }

@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="vh-100">
-    <nav class="navbar navbar-light bg-green absolute-top w-100">
+<body class="vh-100" onload="getuser(); loadscore();">
+    <nav class="navbar navbar-light bg-dark-green absolute-top w-100">
         <div class="p-3">
             <a class="navbar-brand ms-5" href="#">
                 <img src="assest/logo.png" alt="" width="50" height="50" class="ms-5">
             </a>
+
         </div>
+        <h5 class="pe-5 me-5 text-white" id="username"></h5>
     </nav>
     <div
         class="container position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center vh-100">
         <div class="card col-11 col-md-6 col-lg-4 text-center login-card justify-content-around align-items-center">
-            <h2 class="mb-3 text-success">Login</h2>
-            <img src="assest/login_image.png" alt="" width="200" height="200" class="rounded-circle mb-3">
-            <input type="text" id="username" class="login-input my-3" placeholder="Enter your name">
-            <button class="btn login-btn bg-green text-white w-50" onclick="startQuiz()">Start</button>
+            <h2 class="mb-3 text-success">Your Result</h2>
+            <h2 class="mb-3 text-danger" id="score"></h2>
+            <button class="btn login-btn bg-green text-white w-50" onclick="startQuiz()">Start Again</button>
         </div>
     </div>
     <script src="script.js"></script>
